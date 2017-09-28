@@ -10,7 +10,7 @@ rmv_objects removes objects from the FMC with the fmcapi library. You can specif
 - pip install -r requirements.txt
 - python rmv_objects.py server username password object_type regex
 
-## Usage
+### Usage
 
 python rmv_objects.py -h
 usage: rmv_objects.py [-h] server username password object_type regex
