@@ -1,0 +1,13 @@
+certifi==2017.7.27.1
+chardet==3.0.4
+colorama==0.3.9
+DateTime==4.2
+fmcapi==0.52.2
+idna==2.6
+ipaddress==1.0.18
+logutils==0.3.5
+pytz==2017.2
+rainbow-logging-handler==2.2.2
+requests==2.18.4
+urllib3==1.22
+zope.interface==4.4.3
