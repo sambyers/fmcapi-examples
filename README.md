@@ -5,6 +5,8 @@ Example Scripts using the [fmcapi](https://github.com/daxm/fmcapi)
 rmv_objects removes objects from the FMC with the fmcapi library. You can specify the type of object you want to remove and a regular expression to match on object names you want to delete. This script will not delete objects that are in use.
 
 - Install [python](python.org)
+- Install [git](https://git-scm.com/downloads)
+- git clone https://github.com/sambyers/fmcapi-examples
 - pip install -r requirements.txt
 - python rmv_objects.py server username password object_type regex
 
