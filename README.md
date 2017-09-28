@@ -18,10 +18,10 @@ usage: rmv_objects.py [-h] server username password object_type regex
 Get arguments for rmv_objects script.
 
 positional arguments:  
-  server       IP or DNS of the FMC Server  
-  username     Username for FMC.  
-  password     Password for FMC.  
-  object_type  Object type to remove. protocolport and ipnetwork is supported
+  _server_       IP or DNS of the FMC Server  
+  _username_     Username for FMC.  
+  _password_     Password for FMC.  
+  _object_type_  Object type to remove. protocolport and ipnetwork is supported
                today.  
-  regex        The regular expression to match objects to remove. Use double
+  _regex_        The regular expression to match objects to remove. Use double
                quotes around the pattern.  
