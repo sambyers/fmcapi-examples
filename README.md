@@ -21,7 +21,7 @@ positional arguments:
   _server_       IP or DNS of the FMC Server  
   _username_     Username for FMC.  
   _password_     Password for FMC.  
-  _object_type_  Object type to remove. protocolport and ipnetwork is supported
+  _object_type_  Object type to remove. protocolport, ipnetwork, networkgroup are supported
                today.  
   _regex_        The regular expression to match objects to remove. Use double
                quotes around the pattern.  
