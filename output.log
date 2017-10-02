@@ -1,0 +1,12 @@
+2017/10/02-16:51:35 - INFO:fmc.py:311 - Requesting new tokens from https://64.100.10.229/api/fmc_platform/v1/auth/generatetoken.
+2017/10/02-16:51:43 - INFO:fmc.py:90 - Building base to URLs.
+2017/10/02-16:51:43 - INFO:fmc.py:169 - Collecting version information from FMC.
+2017/10/02-16:51:46 - INFO:fmc.py:176 - Populating vdbVersion, sruVersion, serverVersion, and geoVersion FMC instance variables.
+2017/10/02-16:51:46 - INFO:api_objects.py:138 - GET query for object with no name or id set.  Returning full list of these object types instead.
+2017/10/02-16:51:49 - INFO:api_objects.py:166 - DELETE success. Object with name: "test_1" and id: "005056B8-4833-0ed3-0000-137438953475" deleted in FMC.
+2017/10/02-16:51:51 - INFO:api_objects.py:166 - DELETE success. Object with name: "test_2" and id: "005056B8-4833-0ed3-0000-137438953493" deleted in FMC.
+2017/10/02-16:51:55 - INFO:api_objects.py:166 - DELETE success. Object with name: "test_3" and id: "005056B8-4833-0ed3-0000-137438953511" deleted in FMC.
+2017/10/02-16:51:57 - INFO:api_objects.py:166 - DELETE success. Object with name: "test_4" and id: "005056B8-4833-0ed3-0000-137438953529" deleted in FMC.
+2017/10/02-16:51:57 - INFO:fmc.py:81 - Auto deploy changes set to False.  Use the Deploy button in FMC to push changes to FTDs.
+
+

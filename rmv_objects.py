@@ -48,7 +48,7 @@ def main():
 
     object_type.lower()
     
-    implemented_objects = ('protocolport', 'ipnetwork', 'networkgroup')
+    implemented_objects = ('protocolport', 'ipnetwork', 'networkgroup', 'iphost')
 
     if object_type in implemented_objects:
 
@@ -66,6 +66,11 @@ def main():
 
             elif object_type == 'networkgroup':
                 obj1 = NetworkGroup(fmc=fmc1)
+                result = obj1.get()
+                del_count = del_obj(obj1, result, regex)
+
+            elif object_type == 'iphost':
+                obj1 = IPHost(fmc=fmc1)
                 result = obj1.get()
                 del_count = del_obj(obj1, result, regex)
 
