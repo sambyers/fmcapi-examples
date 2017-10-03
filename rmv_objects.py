@@ -10,7 +10,7 @@ def get_args():
     parser.add_argument('server', type=str, help='IP or DNS of the FMC Server')
     parser.add_argument('username', type=str, help='Username for FMC.')
     parser.add_argument('password', type=str, help='Password for FMC.')
-    parser.add_argument('object_type', type=str, help='Object type to remove. protocolport, ipnetwork, networkgroup, iphost are supported today.')
+    parser.add_argument('object_type', type=str, help='Object type to remove. protocolport, ipnetwork, networkgroup, iphost, iprange are supported today.')
     parser.add_argument('regex', type=str, help='The regular expression to match objects to remove. Use double quotes around the pattern.')
 
     args = parser.parse_args()
@@ -48,7 +48,7 @@ def main():
 
     object_type.lower()
     
-    implemented_objects = ('protocolport', 'ipnetwork', 'networkgroup', 'iphost')
+    implemented_objects = ('protocolport', 'ipnetwork', 'networkgroup', 'iphost', 'iprange')
 
     if object_type in implemented_objects:
 
@@ -71,6 +71,11 @@ def main():
 
             elif object_type == 'iphost':
                 obj1 = IPHost(fmc=fmc1)
+                result = obj1.get()
+                del_count = del_obj(obj1, result, regex)
+
+            elif object_type == 'iprange':
+                obj1 = IPRange(fmc=fmc1)
                 result = obj1.get()
                 del_count = del_obj(obj1, result, regex)
 
