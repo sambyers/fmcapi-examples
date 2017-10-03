@@ -10,7 +10,7 @@ def get_args():
     parser.add_argument('server', type=str, help='IP or DNS of the FMC Server')
     parser.add_argument('username', type=str, help='Username for FMC.')
     parser.add_argument('password', type=str, help='Password for FMC.')
-    parser.add_argument('object_type', type=str, help='Object type to remove. protocolport, ipnetwork, networkgroup are supported today.')
+    parser.add_argument('object_type', type=str, help='Object type to remove. protocolport, ipnetwork, networkgroup, iphost are supported today.')
     parser.add_argument('regex', type=str, help='The regular expression to match objects to remove. Use double quotes around the pattern.')
 
     args = parser.parse_args()
